@@ -16,7 +16,7 @@ app.use(cors());
 
 mongoose
   .connect(
-    "mongodb+srv://belma:svadba1712@cluster0.kn4cg.mongodb.net/slatkiKutak?retryWrites=true&w=majority",
+    "mongodb+srv://name:password@cluster0.kn4cg.mongodb.net/slatkiKutak?retryWrites=true&w=majority",
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
@@ -106,7 +106,7 @@ const sendMails = async(name) => {
           console.log(err);
         } else {
           let mailOptions = {
-            from: 'belma.dedic2019@size.ba',
+            from: 'example@gmail.com',
             to: users[i].email,
             subject: 'Slatki kutak - nova poslastica',
             html: html
