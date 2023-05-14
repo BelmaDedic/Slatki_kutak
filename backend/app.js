@@ -97,7 +97,7 @@ const sendMails = async(name) => {
         service: 'gmail',
         auth: {
           user: 'example@gmail.com',
-          pass: 'test123'        
+          pass: 'test1234'        
         }
       });
     
